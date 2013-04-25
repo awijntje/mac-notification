@@ -1,7 +1,6 @@
 #!/usr/bin/perl -w
 
 use strict;
-use lib "/usr/local/nagios/perl/lib";
 use SNMP::Trapinfo;
 use Data::Dumper;
 
