@@ -2,8 +2,12 @@ MAC notification
 
 This script when setup as a traphandle will process mac-learnt mac-removed SNMPTraps and insert/update a Netdisco DB.
 
+The script mac-trap.pl is a test-script that will create a log file.
+Using this logfile it is possible to write up the correct code needed to enhance the mac-notification.pl script.
+
+The mac-notification.pl is the main script edit it to contain the correct DB information.
+
 Configuration of snmptrapd.conf
 
 for Cisco devices add the following line to your snmptrapd.conf:
 traphandle .1.3.6.1.4.1.9.9.215* /usr/bin/perl <path-to>/mac-notif.pl
-
